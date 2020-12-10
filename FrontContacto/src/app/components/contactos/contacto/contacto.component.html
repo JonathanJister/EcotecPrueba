@@ -1,0 +1,62 @@
+<form [formGroup]= "form" (ngSubmit)="guardarContacto()">
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-goup-prened">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
+            <input type="text" class="form-control" formControlName="nombre" placeholder="Nombre">
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-goup-prened">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-envelope"></i>
+                </div>
+            </div>
+            <input type="text" class="form-control" formControlName="email" placeholder="E-Mail">
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-goup-prened">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-phone"></i>
+                </div>
+            </div>
+            <input type="text" class="form-control" formControlName="telefono" placeholder="Telefono">
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-goup-prened">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+            </div>
+            <input type="date" class="form-control" formControlName="fecha" placeholder="Fecha">
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-goup-prened">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-city"></i>
+                </div>
+            </div>
+            <!--input ngx-google-places-autocomplete [options]='options' #placesRef="ngx-places" (onAddressChange)="handleAddressChange($event)"/-->
+            <input class="form-control" formControlName="direccion" placeholder="Ciudad y Estado" >
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <button type="submit" class="btn btn-success btn-lg btn-block" [disabled]="form.invalid"><i class="fas fa-database"></i> Enviar</button>
+    </div>
+</form>
+ 

@@ -1,0 +1,10 @@
+.jumbotron {
+    width: fit-content;
+    border-radius: 60px ;
+    background-color: rgb(30, 255, 0);
+    color: white;
+    padding: 1%;
+}
+.fa-leaf { 
+    color: rgb(10, 63, 3);
+}
